@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "description": "Where programmers become Gladiators. We organize workshop, classes, contests and many more.",
+    "title": "ACM Task Force"
+  },
+  {
+    "id": 2,
+    "description": "The best way to get a project done faster is to start sooner Start development today.",
+    "title": "Development"
+  },
+  {
+    "id": 3,
+    "description": "Why do we do basic research? To learn about ourselves. Start learning yourself today.",
+    "title": "Research & Journal"
+  },
+  {
+    "id": 4,
+    "description": "Worried about your career Lets learn how to build a better and skilled career.",
+    "title": "Research & Journal"
+  }
+]
