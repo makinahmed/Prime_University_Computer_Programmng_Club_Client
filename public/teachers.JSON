@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Masrur Sobhan",
+    "position": "Lecturer",
+    "isAbsence": true,
+    "id": "1220",
+    "img": "https://i.ibb.co/LNSDkP7/mashrur.png",
+    "email": "masrursobhan@iut-dhaka.edu",
+    "study": "Bsc (Engg.) in CSE, Islamic University of Technology"
+  },
+  {
+    "name": "Dr Momtaz Begum Momo",
+    "position": "Associate Professor",
+    "isAbsence": false,
+    "id": "123",
+    "img": "https://i.ibb.co/54htLqn/momo.png",
+    "email": "momoislam81@yahoo.com",
+    "study": "Ph.D, Jahangirnagar University"
+  },
+  {
+    "name": "Moslem Uddin",
+    "position": "Lecturer",
+    "isAbsence": true,
+    "id": "1229",
+    "img": "https://i.ibb.co/SK2nVFg/moslem.png",
+    "email": "moslem.mathcu@gmail.com",
+    "study": "M.S. in Mathematics-Applied (Thesis Group), University of Chittagong"
+  },
+  {
+    "name": "Ms. Rabeya Sultana",
+    "position": "Senior Lecturer",
+    "isAbsence": false,
+    "id": "555555",
+    "img": "https://i.ibb.co/grQ1stw/rabeya.png",
+    "email": "roma110204018@gmail.com",
+    "study": "MSc in CSE, BUET"
+  },
+  {
+    "name": "Md. R. Rahman",
+    "position": "Senior Lecturer",
+    "isAbsence": false,
+    "id": "124",
+    "img": "https://i.ibb.co/9bzYbdC/rimon.png",
+    "email": "rimon.iu@gmail.com",
+    "study": "MSc in CSE, Islamic University"
+  },
+  {
+    "name": "Rezoana Akter",
+    "position": "Lecturer",
+    "isAbsence": false,
+    "id": "12236952",
+    "img": "https://i.ibb.co/WkN6ncK/rezoana.png",
+    "email": "rezoana.akter.ju@gmail.com",
+    "study": "MSc in IT, Jahangirnagar University"
+  },
+  {
+    "name": "Md Shihabul Islam",
+    "position": "Associate Professor and Head",
+    "isAbsence": false,
+    "id": "100000",
+    "img": "https://i.ibb.co/7SWkcwY/profile-pic.png",
+    "email": "hod.cse@primeuniversity.edu.bd",
+    "study": "Ph.D (on going)"
+  },
+  {
+    "name": "Sworna Akter",
+    "position": "Senior Lecturer",
+    "isAbsence": false,
+    "id": "126",
+    "img": "https://i.ibb.co/VmqtwYT/profile-pic-1.png",
+    "email": "sworna.hstu12@gmail.com",
+    "study": "M.Sc in ICT, BUET (Running)"
+  },
+  {
+    "name": "Md. Alamgir Hossain",
+    "position": "Senior Lecturer",
+    "isAbsence": false,
+    "id": "127",
+    "img": "https://i.ibb.co/VSWwpQn/alamgir.png",
+    "email": "alamgir.cse14.just@gmail.com",
+    "study": "B.Sc in CSE, JUST"
+  },
+  {
+    "name": "Omlan Jyoti Mondal",
+    "position": "Lecturer",
+    "isAbsence": false,
+    "id": "1226",
+    "img": "https://i.ibb.co/pL0jW1p/omlan.png",
+    "email": "amlananonto@gmail.com",
+    "study": "B.tech in CSE, JNTUA, Andhrapradesh, India"
+  },
+  {
+    "name": "Prof. Dr. Jahangir Alam, D. Engg",
+    "position": "Dean, Faculty of Engineering",
+    "isAbsence": false,
+    "id": "356",
+    "img": "https://i.ibb.co/Tr23RV7/jahangir.png",
+    "email": "alamjB2018@primeuniversity.edu.bd",
+    "study": "Doctor of Engineering, Morgan State University, USA"
+  },
+  {
+    "name": "Dilruba Nusrat",
+    "position": "Lecturer",
+    "isAbsence": false,
+    "id": "25879",
+    "img": "https://i.ibb.co/StSzVXB/dilruba.png",
+    "email": "dilruba.nusrat09@gmail.com",
+    "study": "B.Sc in CSE, Daffodil International University"
+  },
+  {
+    "name": "Khan Enaet Hossain",
+    "position": "Lecturer",
+    "isAbsence": true,
+    "id": "129",
+    "img": "https://i.ibb.co/KxF45Yk/enayet.png",
+    "email": "enayetkhan09@gmail.com",
+    "study": "Post Graduate in Applied Mathematics, Khulna University, Khulna, Bangladesh"
+  },
+  {
+    "name": "Md. Mojibur Rahman Redoy Akanda",
+    "position": "Senior Lecturer",
+    "isAbsence": true,
+    "id": "125",
+    "img": "https://i.ibb.co/KGhzY3X/hridoy.png",
+    "email": "redoy.akond@gmail.com",
+    "study": "B.Sc in CSE, Daffodil International University"
+  },
+  {
+    "name": "Md Imam Hossain",
+    "position": "Lecturer",
+    "isAbsence": false,
+    "id": "1228",
+    "img": "https://i.ibb.co/7Gm1dy0/imam.png",
+    "email": "hossain1993b@gmail.com",
+    "study": "MSc Engg., Rajshahi University"
+  },
+  {
+    "name": "Md Imtiaz Ahmed",
+    "position": "Lecturer",
+    "isAbsence": false,
+    "id": "12275",
+    "img": "https://i.ibb.co/QbRqCBL/imtiaz.png",
+    "email": "imtiaz.ahmed@primeuniversity.edu.bd",
+    "study": "MSc in IT, Jahangirnagar University"
+  },
+  {
+    "name": "Ishtiaq Ahammad",
+    "position": "Lecturer",
+    "isAbsence": false,
+    "id": "354823",
+    "img": "https://i.ibb.co/xGL4QGP/ishtiaq.png",
+    "email": "ahammadishtiaq27@gmail.com",
+    "study": "MSc (Engg), Noakhali Science and Technology University"
+  },
+  {
+    "name": "Sanchita Rani Das",
+    "position": "Lecturer",
+    "isAbsence": true,
+    "id": "128",
+    "img": "https://i.ibb.co/09Wmw1q/sanchita.png",
+    "email": " sanchitanipa@yahoo.com",
+    "study": "BSc in CSE, RUET"
+  }
+]

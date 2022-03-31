@@ -38,7 +38,8 @@ const Footer = () => {
 
           <a
             href="https://www.facebook.com/CPCPrimeUniversity/"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               style={{ color: "white" }}
@@ -55,9 +56,9 @@ const Footer = () => {
             />
           </a>
           <a
-             
             href="https://www.linkedin.com/in/prime-university-computer-programming-club-7539a4229/"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               style={{ color: "white" }}

@@ -6,6 +6,9 @@ import Gallary from "./Components/Gallary/Gallary";
 import Blog from "./Components/Blog/Blog";
 import Wings from "./Components/Wings/Wings";
 import Footer from "./Components/Footer/Footer";
+import Teachers from "./Components/Teachers/Teachers";
+import ClubMembers from "./Components/ClubMembers/ClubMembers";
+import ClubMember from "./Components/ClubMembers/ClubMember";
 
 function App() {
   return (
@@ -15,6 +18,8 @@ function App() {
       <Gallary/>
       <Blog/>
       <Wings/>
+      <Teachers/>
+      <ClubMember/>
       <Footer/>
     </div>
   );
