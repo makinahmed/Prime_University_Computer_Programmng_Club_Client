@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import React from "react";
 
 const ClubMembers = (props) => {
-    
-
-  const { name, img, position } = props?.clubMember;
-
   return (
     <>
-      <div>
-        <img className="img-fluid w-25" src={img} alt="" />
+      <div className="w-50 mx-auto">
+        <img className="w-50 my-3" src={props?.clubMember?.img} alt="" />
       </div>
-      <h5>{name}</h5>
-      <p>{position}</p>
+      <h5>{props?.clubMember?.name}</h5>
+      <p>{props?.clubMember?.position}</p>
     </>
   );
 };

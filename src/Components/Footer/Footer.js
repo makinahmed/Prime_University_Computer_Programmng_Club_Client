@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="container-fluid footer-container">
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 text-center">
           <h2>About Us</h2>
           <p>
             PUCPC is the most primitive and extensive club of our University. We
@@ -19,7 +19,7 @@ const Footer = () => {
             know more.
           </p>
         </div>
-        <div className="col-md-4 site-nav">
+        <div className="col-md-4 site-nav text-center">
           <h2>Site Navigation</h2>
           <ul className="site-navigation">
             <li>
@@ -33,7 +33,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4  text-center">
           <h2>Stay Connected</h2>
 
           <a

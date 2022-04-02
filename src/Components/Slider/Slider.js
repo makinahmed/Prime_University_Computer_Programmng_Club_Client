@@ -1,37 +1,47 @@
 import React, { useEffect, useState } from "react";
-import { Carousel } from "react-bootstrap";
-// import { sliderData } from "../../FakeData/sliderData";
-import './slider.css';
+import { Carousel, Spinner } from "react-bootstrap";
+import "./slider.css";
 const Slider = () => {
   const [sliderData, setSliderData] = useState([]);
   useEffect(() => {
-    fetch("/sliderData.JSON")
+    fetch("https://pucpc.herokuapp.com/slider")
       .then((res) => res.json())
-      .then((data) => setSliderData(data?.images));
+      .then((data) => setSliderData(data[0]?.images));
   }, []);
-  // console.log(sliderData[0], 'afas')
-//   sliderData.map((i) => console.log(i.img, "imgggggggg"));
+  console.log(sliderData);
   return (
-    <div>
-      <Carousel>
-        {sliderData?.map((obj) => (
-          <Carousel.Item
-            style={{ height: "90vh" }}
-            key={obj.id}
-            interval={1000}
-          >
-            <img
-              className="d-block w-100 slider-img"
-              src={obj.img}
-              alt="Slider"
-            />
-            <Carousel.Caption>
-              <h3 className="  title">Welcome to prime University Computer Programming Club</h3>
-              <p>PUCPC</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+    <div className="pucpc-slider">
+      <div className="slider-text text-center">
+        <h1 className="slider-title"> Welcome to prime University</h1>
+        <h1 className="slider-title"> Computer Programming Club </h1>
+      </div>
+      {sliderData ? (
+        <Carousel>
+          {sliderData?.map((obj) => (
+            <Carousel.Item
+              className="carousel-item"
+              key={obj.id}
+              interval={2000}
+            >
+              <img
+                className="d-block mx-auto slider-img"
+                src={obj.img}
+                alt="Slider"
+              />
+
+              {/* <Carousel.Caption
+                className="title"
+                style={{ fontSize: "clamp(2rem,90vw,3rem)" }}
+              >
+                Welcome to prime University Computer Programming Club 
+                
+              </Carousel.Caption> */}
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      ) : (
+        <Spinner className="mx-auto" animation="border" variant="danger" />
+      )}
     </div>
   );
 };

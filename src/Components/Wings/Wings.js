@@ -4,12 +4,12 @@ import "./Wings.css";
 const Wings = () => {
   const [wingsData, setWingsData] = useState([]);
   useEffect(() => {
-    fetch("/wingsData.JSON")
+    fetch("https://pucpc.herokuapp.com/wing")
       .then((res) => res.json())
       .then((data) => setWingsData(data));
   }, []);
   return (
-    <div className="container wings-container ">
+    <div className="container wings-container " id="wings-hash-link">
       <div className="row g-5">
         {wingsData.map((data) => (
           <div className="col-md-3 wings-card p-5">

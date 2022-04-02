@@ -1,27 +1,35 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Header/Header";
-import Slider from "./Components/Slider/Slider";
-import Gallary from "./Components/Gallary/Gallary";
-import Blog from "./Components/Blog/Blog";
-import Wings from "./Components/Wings/Wings";
 import Footer from "./Components/Footer/Footer";
-import Teachers from "./Components/Teachers/Teachers";
-import ClubMembers from "./Components/ClubMembers/ClubMembers";
-import ClubMember from "./Components/ClubMembers/ClubMember";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HOME from "./Pages/HOME/HOME";
+import Blog from "./Components/Blog/Blog";
+import Gallary from "./Components/Gallary/Gallary";
+import BlogDetails from "./Components/Blog/BlogDetails";
+import Fest from "./Components/Gallary/Fest";
+import Session from "./Components/Gallary/Session";
+import Contest22 from "./Components/Gallary/Contest22";
+
 
 function App() {
+  document.title = "Prime University Computer Programming Club";
   return (
-    <div className="App">
+    <BrowserRouter>
+     
       <Header />
-      <Slider />
-      <Gallary/>
-      <Blog/>
-      <Wings/>
-      <Teachers/>
-      <ClubMember/>
-      <Footer/>
-    </div>
+      <Routes>
+        <Route path="/" element={<HOME />}>
+          <Route path="/fest" element={<Fest />} />
+          <Route path="/session" element={<Session />} />
+          <Route path="/contest22" element={<Contest22 />} />
+        </Route>
+        <Route path="/home" element={<HOME />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

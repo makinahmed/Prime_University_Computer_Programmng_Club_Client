@@ -1,30 +1,44 @@
 import React, { useEffect, useState } from "react";
 import { Card, Button } from "react-bootstrap";
-import './Blog.css';
+import { Link } from "react-router-dom";
+import "./Blog.css";
 const Blog = () => {
   const [blogData, setBlogData] = useState([]);
   useEffect(() => {
-    fetch("/blogData.JSON")
+    fetch("https://pucpc.herokuapp.com/blog")
       .then((res) => res.json())
       .then((data) => setBlogData(data));
   }, []);
 
-  //   galleryData.map(a=>console.log(a.img, ' im img'))
   return (
     <>
-      <h1>Blog</h1>
-      <div class="container ">
-        <div class="row g-5">
+      <h1
+        id="blog-hash-link"
+        style={{ fontSize: "3.5rem" }}
+        className="my-5 text-center"
+      >
+        Blog
+      </h1>
+      <div className="container ">
+        <div className="row g-5 mx-auto">
           {blogData.map((data) => (
             <div className="col col-md-4">
               <Card style={{ width: "18rem", height: "25rem" }}>
                 <Card.Img variant="top" className="blog-card" src={data.img} />
                 <Card.Body>
-                  <Card.Title>
+                  <Card.Title className="text-center ">
                     <h5 className="fw-bold">{data.title}</h5>
                   </Card.Title>
-                  <Card.Text>{data.description.slice(0, 120)}</Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <Card.Text className="lh-lg">
+                    {data.description.slice(0, 120)}
+                    <Link
+                      className="text-black "
+                      variant="primary"
+                      to={`blog/${data.id}`}
+                    >
+                      See Details
+                    </Link>
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </div>

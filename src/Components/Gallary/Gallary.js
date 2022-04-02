@@ -1,30 +1,42 @@
-import React, { useEffect, useState } from "react";
-import { Spinner } from "react-bootstrap";
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import "./Gallary.css";
 const Gallary = () => {
-  const [galleryData, setGalleryData] = useState([]);
-  useEffect(() => {
-    fetch("/gallaryData.JSON")
-      .then((res) => res.json())
-      .then((data) => setGalleryData(data?.contest1));
-  }, []);
-
-  //   galleryData.map(a=>console.log(a.img, ' im img'))
   return (
     <>
-      <h1>Gallery</h1>
-      <div class="container">
-        <div class="row">
-          {galleryData?.slice(10, 30).map((a) => (
-            <div key={a?.id} class="col-md-3 g-4 md-6">
-              <img className="gallery-img" src={a?.img} alt="" />
-            </div>
-          ))}
-        </div>
+      <h1 style={{ fontSize: "3.5rem" }} className="mt-5 text-center">
+        Gallery
+      </h1>
+      <p className="text-center fs-3 mb-5 w-90">
+        Have a look of our events, contests,seminar and festival
+      </p>
+
+      <div className="text-center">
+        <button className="btn btn-dark mx-3">
+          <Link className="fs-3 m-3 text-decoration-none text-white" to="/fest">
+            FEST
+          </Link>
+        </button>
+        <button className="btn btn-dark  mx-3">
+          <Link
+            className="fs-3 m-3 text-decoration-none text-white"
+            to="/contest22"
+          >
+            Contest22
+          </Link>
+        </button>
+        <button className="btn btn-dark  mx-3">
+          <Link
+            className="fs-3 m-3 text-decoration-none text-white"
+            to="/session"
+          >
+            Session
+          </Link>
+        </button>
       </div>
+
+      <Outlet />
     </>
   );
-   
 };
-// https://i.ibb.co/pXFcdBn/IMG-20220308-141010-474.jpg
 export default Gallary;
