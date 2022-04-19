@@ -7,11 +7,11 @@ const BlogDetails = () => {
   let { id } = useParams();
   const [singleBlog, setSingleBlog] = useState([]);
   useEffect(() => {
-    fetch("/blogData.JSON")
+    fetch("https://pucpc.herokuapp.com/blog")
       .then((res) => res?.json())
       .then((data) => setSingleBlog(data));
   }, [id]);
-
+console.log(id);
   const blogItem = singleBlog.filter((item) => item.id === id);
   return (
     <Container className="mt-5">

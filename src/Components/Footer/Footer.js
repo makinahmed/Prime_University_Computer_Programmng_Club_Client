@@ -6,6 +6,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,7 +20,40 @@ const Footer = () => {
             know more.
           </p>
         </div>
-        <div className="col-md-4 site-nav text-center">
+        <div className="col-md-2  text-center">
+          <h2>Resources</h2>
+          <div>
+            <a
+              className="text-white"
+              href="https://www.youtube.com/c/anisulislamrubel"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Anisul Islam
+            </a>
+          </div>
+          <div>
+            <a
+              className="text-white"
+              href="https://www.youtube.com/c/AhsanRadit"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ahsan Radit
+            </a>
+          </div>
+          <div>
+            <a
+              className="text-white"
+              href="http://cpbook.subeen.com/?_ga=2.96265820.1566888664.1650385431-1967783221.1648899832"
+              target="_blank"
+              rel="noreferrer"
+            >
+              C Programming Resource
+            </a>
+          </div>
+        </div>
+        <div className="col-md-3 site-nav text-center">
           <h2>Site Navigation</h2>
           <ul className="site-navigation">
             <li>
@@ -29,11 +63,13 @@ const Footer = () => {
               <a href="/">Blog</a>
             </li>
             <li>
-              <a href="/">Contact</a>
+              <Link to="/contact">
+                <a href="/">Contact</a>
+              </Link>
             </li>
           </ul>
         </div>
-        <div className="col-md-4  text-center">
+        <div className="col-md-3  text-center">
           <h2>Stay Connected</h2>
 
           <a

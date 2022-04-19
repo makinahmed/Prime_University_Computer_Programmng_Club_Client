@@ -9,7 +9,6 @@ const Blog = () => {
       .then((res) => res.json())
       .then((data) => setBlogData(data));
   }, []);
-
   return (
     <>
       <h1
@@ -34,7 +33,7 @@ const Blog = () => {
                     <Link
                       className="text-black "
                       variant="primary"
-                      to={`blog/${data.id}`}
+                      to={`${data.id}`}
                     >
                       See Details
                     </Link>

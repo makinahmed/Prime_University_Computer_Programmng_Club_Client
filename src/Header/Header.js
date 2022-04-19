@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import logo from '../logo.png';
 const Header = () => {
   return (
@@ -15,7 +14,7 @@ const Header = () => {
         
       >
         <Container>
-          <HashLink style={{display: 'inline-block'}} to="home#logo-hash-link">
+          <Link style={{display: 'inline-block'}} to="/home">
             
               <img
                 style={{ width: "100px"  }}
@@ -23,43 +22,38 @@ const Header = () => {
                 alt=""
               />
             
-          </HashLink>
+          </Link>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <HashLink
+              <Link
                 className="text-white text-decoration-none p-3"
-                to="home#gallery-hash-link"
+                to="/gallary"
               >
                 GALLARY
-              </HashLink>
-              <HashLink
+              </Link>
+              <Link
                 className="text-white text-decoration-none p-3"
-                to="home#team-hash-link"
+                to="/team"
               >
                 TEAM
-              </HashLink>
-              <HashLink
+              </Link>
+              <Link
                 className="text-white text-decoration-none p-3"
-                to="home#teachers-hash-link"
+                to="/teachers"
               >
                 TEACHERS
-              </HashLink>
+              </Link>
             </Nav>
             <Nav>
-              <HashLink
+              <Link
                 className="text-white text-decoration-none p-3"
-                to="home#blog-hash-link"
+                to="/blog"
               >
                 BLOG
-              </HashLink>
-              <HashLink
-                className="text-white text-decoration-none p-3"
-                to="home#wings-hash-link"
-              >
-                WINGS
-              </HashLink>
+              </Link>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
